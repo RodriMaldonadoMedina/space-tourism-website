@@ -5,33 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website</title>
 </head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
+<body class="bodyDestination">
+  <header>
+    <nav class="nav">
+      <span>
+        <img src="./assets/shared/logo.svg" alt="logo">
+      </span>
+      <span class="barra"></span>
+      <div class="subNav navText">
+        <a href="./index.html" class="textoBlanco">00 Home</a>
+        <a class="activo" href="./destination-moon.html" class="textoBlanco">01 Destination</a> 
+        <a href="./crew-commander.html" class="textoBlanco">02 Crew</a> 
+        <a href="./technology-vehicle.html" class="textoBlanco">03 Technology</a> 
+      </div>
+    </nav>
+  </header>
+  <main class="contenedor">
+    <div>
+      <p class="heading3 textoBlanco"><span class="textoCeleste ">01</span> Pick your destination</p>
+      <img class="imagen" src="./assets/destination/image-moon.png" alt="Moon">
+    </div>
+    <div class="destination">
+      <nav class="subMenu">
+        <a href="./destination-moon.html">Moon</a>
+        <a href="./destination-mars.html">Mars</a>
+        <a href="./destination-europa.html">Europa</a>
+        <a href="./destination-titan.html">Titan</a>
+      </nav>
+      <p class="heading1 textoBlanco">Moon</p>
+      <p class="textoCeleste">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>
+      <div class="pie">
+        <div class="pie1">
+          <p class="subheading2 textoCeleste">AVG. DISTANCE</p>
+          <p class="subheading1 textoBlanco">384,400km</p>
+        </div>
+        <div>
+          <p class="subheading2 textoCeleste">EST. TRAVEL TIME</p>
+          <p class="subheading1 textoBlanco">3 DAYS</p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

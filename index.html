@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,47 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
-  
+
   <title>Space tourism website</title>
 </head>
-<body>
+
+<body class="bodyIndex">
   <header>
-    <nav>
-      <a href="" class="textoBlanco">Home</a>
-      <a href="" class="textoBlanco">Destination</a> 
-      <a href="" class="textoBlanco">Crew</a> 
-      <a href="" class="textoBlanco">Technology</a> 
+    <nav class="nav">
+      <span>
+        <img src="./assets/shared/logo.svg" alt="logo">
+      </span>
+      <span class="barra"></span>
+      <div class="subNav navText">
+        <a class="activo" href="./index.html" class="textoBlanco">00 Home</a>
+        <a href="./destination-moon.html" class="textoBlanco">01 Destination</a>
+        <a href="./crew-commander.html" class="textoBlanco">02 Crew</a>
+        <a href="./technology-vehicle.html" class="textoBlanco">03 Technology</a>
+      </div>
     </nav>
   </header>
-  <main>
-    <div class="contenedor">
-      <h1 class="textoCeleste">
+  <main class="contenedor">
+    <div>
+      <p class="textoCeleste heading5">
         So, you want to travel to
-      </h1>
+      </p>
       <div>
-        <div>
-          <p class="titulo textoBlanco">Space</p>
-          <p class="textoCeleste">Let’s face it; if you want to go to space, you might as well genuinely go to 
-            outer space and not hover kind of on the edge of it. Well sit back, and relax 
-            because we’ll give you a truly out of this world experience!</p>
-        </div>
-        <div class="cajaRedonda">
-          <p>Explore</p>
-        </div>
+        <p class="heading1 textoBlanco">Space</p>
+        <p class="textoCeleste cajaTexto">Let’s face it; if you want to go to space, you might as well genuinely go to
+          outer space and not hover kind of on the edge of it. Well sit back, and relax
+          because we’ll give you a truly out of this world experience!</p>
       </div>
     </div>
+    <div class="cajaRedonda">
+      <p class="relativa heading3 textoAzul">
+        Explore
+      </p>
+    </div>
   </main>
-  
 
- 
+
+
 
 </body>
+
 </html>
