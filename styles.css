@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
     font-family: 'Bellefair', serif;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .textoBlanco{
@@ -44,9 +47,6 @@
 a{
     text-decoration: none;
 }
-a:visited{
-    color: white;
-}
 a:hover{
     padding-top: 1.8rem;
     padding-bottom: 1.8rem;
@@ -55,21 +55,24 @@ a:hover{
 .activo{    
     padding-top: 1.8rem;
     padding-bottom: 1.8rem;
-    border-bottom: 2px solid white;    
+    border-bottom: 2px solid white;  
+    color: white;  
 }
 
-.bodyIndex{
-    margin: 0;
-    padding: 0;
+.bodyIndex{    
     background-image: url("./assets/home/background-home-desktop.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 .bodyDestination{
-    margin: 0;
-    padding: 0;
     background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bodyCrew{
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
