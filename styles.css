@@ -63,31 +63,6 @@ li{
     list-style: none;
 }
 
-.bodyIndex{    
-    background-image: url("./assets/home/background-home-desktop.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.bodyDestination{
-    background-image: url("./assets/destination/background-destination-desktop.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.bodyCrew{
-    background-image: url("./assets/crew/background-crew-desktop.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.bodyTechnology{
-    background-image: url("./assets/technology/background-technology-desktop.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 .navText{
     font-size: 16px;
     font-family: 'Barlow Condensed', sans-serif;
@@ -123,6 +98,14 @@ li{
     z-index: 2;
 }
 
+/****      Pagina Index       ****/
+
+.bodyIndex{    
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .contenedor{
     margin: 0 auto;
     padding: 5rem;
@@ -133,6 +116,33 @@ li{
     justify-content: space-between;
 }
 
+.cajaRedonda{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    bottom: -6rem;
+}
+.cajaRedonda:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+}
+.relativa{
+    width: 200px;
+    position: relative;
+    top: 35%;
+    left: 20%;
+}
+
+/****      Pagina Destination       ****/
+
+.bodyDestination{
+    background-image: url("./assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .destination{
     margin-top: 8rem;
     margin-left: 8rem;
@@ -142,40 +152,10 @@ li{
 .destination p:nth-child(3){
     margin-bottom: 2rem;
 }
-
-.crew{
-    margin: 8rem 4rem 0 8rem;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-}
-
 .cajaTexto{
     width: 350px;
     height: auto;
 }
-
-.cajaRedonda{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    bottom: -6rem;
-}
-
-.cajaRedonda:hover{
-    cursor: pointer;
-    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
-}
-
-.relativa{
-    width: 200px;
-    position: relative;
-    top: 35%;
-    left: 20%;
-}
-
 .pie{
     border-top: 1px solid rgb(208,214,249);
     padding-top: 1rem;
@@ -184,9 +164,23 @@ li{
 .pie1{
     margin-right: 2rem;
 }
-
 .imagenDestination{
     padding: 3rem;
+}
+
+/****      Pagina Crew       ****/
+
+.bodyCrew{
+    background-image: url("./assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.crew{
+    margin: 8rem 4rem 0 8rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
 }
 .imagenCrew{
     width: 50%;
@@ -196,7 +190,6 @@ li{
     position: absolute;
     bottom: 0;
 }
-
 .crew p:nth-child(1){
     margin-bottom: 6rem;
 }
@@ -209,7 +202,6 @@ li{
 .crew p:nth-child(4){
     margin-bottom: 4rem;
 }
-
 .crewPunto{
     width: 1rem;
     height: 1rem;
@@ -219,6 +211,7 @@ li{
 }
 .crewPunto:hover{
     cursor: pointer;
+    background-color: rgb(208, 214, 249);
 }
 .crewActivo{
     background-color: white;
@@ -226,4 +219,65 @@ li{
 }
 .crewNavBottom{
     display: flex;
+}
+
+/****      Pagina Technology       ****/
+
+.bodyTechnology{
+    background-image: url("./assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.imagenTechnology{
+    width: 50%;
+    height: auto;
+}
+.imagenTechnology img{
+    position: absolute;
+    right: 0;
+}
+.technology{
+    margin-top: 6rem;
+    width: 65%;
+    height: auto;
+    display: flex;
+}
+.cajaTechnology{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid rgb(77, 81, 104);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajaTechnology:hover{
+    border: 1px solid white;
+}
+.contenedorTechnology{
+    margin: 0 auto;
+    padding: 5rem;
+    width: 100%;
+    position: absolute;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.subTechnology{
+    margin-left: 2rem;
+}
+.subTechnology p:nth-child(1){
+    margin-bottom: 1rem;
+}
+.subTechnology p:nth-child(2){
+    margin-bottom: 2rem;
+}
+.techActivo{
+    background-color: white;
+    cursor: default;
+}
+.techActivo p{
+    color: black;
 }
