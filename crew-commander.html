@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Space tourism website</title>
 </head>
 <body class="bodyCrew">
   <header>
@@ -18,31 +18,33 @@
       </span>
       <span class="barra"></span>
       <div class="subNav navText">
-        <a href="./index.html" class="textoBlanco activo">00 Home</a>
-        <a href="./destination-moon.html" class="textoBlanco">01 Destination</a>
-        <a href="./crew-commander.html" class="textoBlanco">02 Crew</a>
-        <a href="./technology-vehicle.html" class="textoBlanco">03 Technology</a>
+        <a href="./index.html" class="textoBlanco">00 HOME</a>
+        <a href="./destination-moon.html" class="textoBlanco">01 DESTINATION</a>
+        <a href="./crew-commander.html" class="textoBlanco activo">02 CREW</a>
+        <a href="./technology-vehicle.html" class="textoBlanco">03 TECHNOLOGY</a>
       </div>
     </nav>
   </header>
   <main class="contenedor">
-    <div>
+    <div class="crew">
       <p class="heading5 textoBlanco"><span class="textoCeleste ">02</span> MEET YOUR CREW</p>
-      <p class="heading5 textoCeleste">Commander</p>
+      <p class="heading5 textoCeleste">COMMANDER</p>
       <p class="heading3 textoBlanco">DOUGLAS HURLEY</p>
       <p class="textoCeleste">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
         and former NASA astronaut. He launched into space for the third time as 
         commander of Crew Dragon Demo-2.</p>
       <nav>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul  class="crewNavBottom">
+          <li><a href="./crew-commander.html"><div class="crewPunto crewActivo"></div></a></li>
+          <li><a href="./crew-specialist.html"><div class="crewPunto"></div></a></li>
+          <li><a href="./crew-pilot.html"><div class="crewPunto"></div></a></li>
+          <li><a href="./crew-engineer.html"><div class="crewPunto"></div></a></li>
         </ul>
       </nav>
+    </div>
+    <div class="imagenCrew">
+      <img src="./assets/crew/image-douglas-hurley.png" alt="commander">
+    </div>
   </main>
-
-  
 </body>
 </html>
