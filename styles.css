@@ -47,7 +47,7 @@
 a{
     text-decoration: none;
 }
-a:hover{
+.nav a:hover{
     padding-top: 1.8rem;
     padding-bottom: 1.8rem;
     border-bottom: 2px solid gray;
@@ -75,7 +75,7 @@ li{
     align-items: center;
 }
 .subNav{
-    width: 60%;
+    width: 70%;
     height: 5rem;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
@@ -91,11 +91,17 @@ li{
     align-items: center;
 }
 .barra{
-    width: 30%;
+    width: 25%;
     border-bottom: 1px solid rgb(208, 214, 249);
     position: relative;
-    left: 92px;
+    left: 2rem;
     z-index: 2;
+}
+
+@media screen and (max-width: 990px){
+    .barra{
+        display: none;
+    }
 }
 
 /****      Pagina Index       ****/
@@ -123,16 +129,54 @@ li{
     background-color: white;
     position: relative;
     bottom: -6rem;
+    display: flex;
 }
 .cajaRedonda:hover{
     cursor: pointer;
     box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
 }
 .relativa{
-    width: 200px;
-    position: relative;
-    top: 35%;
-    left: 20%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .cajaTexto{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cajaRedonda{
+        margin: 0 auto;
+    }
+    .nav{
+        margin: 2.5rem 0;
+    }
+    .subNav{
+        width: 80%;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .subNav{
+        width: 70%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        letter-spacing: 2.7px;
+        font-size: 16px;
+        z-index: 1;
+    }
+    .subNav a{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /****      Pagina Destination       ****/
