@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Space tourism website</title>
 </head>
 <body class="bodyCrew">
@@ -17,12 +18,17 @@
         <img src="./assets/shared/logo.svg" alt="logo">
       </span>
       <span class="barra"></span>
-      <div class="subNav navText">
-        <a href="./index.html" class="textoBlanco">00 HOME</a>
-        <a href="./destination-moon.html" class="textoBlanco">01 DESTINATION</a>
-        <a href="./crew-commander.html" class="textoBlanco activo">02 CREW</a>
-        <a href="./technology-vehicle.html" class="textoBlanco">03 TECHNOLOGY</a>
-      </div>
+      <input type="checkbox" id="menu">
+      <label for="menu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </label>
+      <ul class="subNav navText">
+        <li><a href="./index.html" class="textoBlanco">00 HOME</a></li>
+        <li><a href="./destination-moon.html" class="textoBlanco">01 DESTINATION</a></li>
+        <li><a href="./crew-commander.html" class="textoBlanco activo">02 CREW</a></li>
+        <li><a href="./technology-vehicle.html" class="textoBlanco">03 TECHNOLOGY</a></li>
+      </ul>
     </nav>
   </header>
   <main class="contenedor">

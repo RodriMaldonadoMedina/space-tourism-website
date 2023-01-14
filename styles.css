@@ -281,6 +281,7 @@ input,label{
 
 @media screen and (max-width: 480px){
     .imagenDestination{
+        margin-top: 1.5rem;
         padding: 1rem 0;
     }
 }
@@ -338,6 +339,32 @@ input,label{
     display: flex;
 }
 
+@media screen and (max-width: 768px){
+    .contenedor{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .crew{
+        margin: 0 auto;
+    }
+    .crew nav{
+        margin: auto;
+    }
+    .imagenCrew{
+        width: 100%;
+    }
+    .imagenCrew img{
+        position: relative;
+        margin: 2rem auto 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .crew{
+        width: 100%;
+    }
+}
+
 /****      Pagina Technology       ****/
 
 .bodyTechnology{
@@ -346,17 +373,16 @@ input,label{
     background-attachment: fixed;
     background-size: cover;
 }
+
 .imagenTechnology{
     width: 50%;
     height: auto;
 }
-.imagenTechnology img{
-    position: absolute;
-    right: 0;
-}
+
 .technology{
     margin-top: 6rem;
-    width: 65%;
+    padding-right: 2rem;
+    width: 100%;
     height: auto;
     display: flex;
 }
